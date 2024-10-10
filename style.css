@@ -191,18 +191,18 @@ body {
   font-size: 0.7rem;
 }
 
-.labels{
+.labels {
   display: flex;
   justify-content: space-between;
 }
 
-.inputError{
+.inputError {
   background-color: rgba(253, 120, 120, 0.208);
   color: var(--Tomato);
   outline: 1px tomato solid;
 }
 
-.errorMessage{
+.errorMessage {
   font-size: 0.7rem;
   color: red;
   font-weight: 600;
@@ -223,7 +223,7 @@ body {
 
 /* after subscribing */
 
-.afterSub{
+.afterSub {
   display: flex;
   flex-direction: column;
   padding: 2rem;
@@ -232,11 +232,11 @@ body {
   border-radius: 20px;
 }
 
-.afterSub img{
+.afterSub img {
   width: 2.5rem;
 }
 
-.afterTitle{
+.afterTitle {
   font-size: 2.1rem;
   font-weight: 600;
   color: var(--Dark-Slate-Grey);
@@ -244,17 +244,17 @@ body {
   line-height: 35px;
 }
 
-.afterSubtitle{
+.afterSubtitle {
   font-size: 0.7rem;
- max-width: 265px;
+  max-width: 265px;
 }
 
-.afterSubtitle span{
+.afterSubtitle span {
   color: var(--Dark-Slate-Grey);
   font-weight: 600;
 }
 
-#afterButton{
+#afterButton {
   background-color: var(--Dark-Slate-Grey);
   border-style: none;
   color: white;
@@ -263,20 +263,20 @@ body {
   border-radius: 7px;
 }
 
-#afterButton:hover{
+#afterButton:hover {
   background-image: linear-gradient(to right, var(--Tomato), hsl(21, 100%, 67%));
   cursor: pointer;
 }
 
 @media screen and (max-width: 750px) {
 
-  body{
+  body {
     display: block;
     background-color: white;
     overflow: hidden;
   }
 
-  .mainContainer{
+  .mainContainer {
     display: flex;
     flex-direction: column;
     width: 100%;
@@ -286,7 +286,7 @@ body {
     align-items: flex-start;
   }
 
-  .leftContainer{
+  .leftContainer {
     padding: 0;
     justify-content: center;
     height: 100%;
@@ -294,35 +294,61 @@ body {
     gap: 1.7rem;
   }
 
-  .rightContainer{
+  .rightContainer {
     order: -1;
     width: 100%;
     content: url(assets/images/illustration-sign-up-mobile.svg);
   }
 
-.title{
-  font-size: 3.2rem;
-}
+  .title {
+    font-size: 3.2rem;
+  }
 
-.subtitle{
-  font-size: 1.1rem;
-  max-width: none;
-}
+  .subtitle {
+    font-size: 1.1rem;
+    max-width: none;
+  }
 
-#input{
-  width: 100%;
-  padding: 15px;
-}
+  #input {
+    width: 100%;
+    padding: 15px;
+  }
 
-#firstButton{
-  padding: 15px;
-  font-size: 1.1rem;
-}
+  #firstButton {
+    padding: 15px;
+    font-size: 1.1rem;
+  }
 
-.list span{
-  font-size: 1.1rem;
-}
+  .list span {
+    font-size: 1.1rem;
+  }
 
-  
+  .afterSub{
+    justify-content: center;
+    height: 100svh;
+  }
+
+  .afterSubtitle {
+    font-size: 1.1rem;
+    max-width: none;
+  }
+
+  .afterTitle {
+    font-size: 3.2rem;
+    line-height: 3rem;
+  }
+
+  .afterSub img {
+    width: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  #afterButton{
+    padding: 15px;
+    font-size: 1.1rem;
+    margin-top: 12rem;
+    margin-bottom: -7rem;
+  }
+
 
 }

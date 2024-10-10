@@ -1,0 +1,328 @@
+:root {
+
+  --Tomato: hsl(4, 100%, 67%);
+  --Dark-Slate-Grey: hsl(234, 29%, 20%);
+  --Charcoal-Grey: hsl(235, 18%, 26%);
+  --Grey: hsl(231, 7%, 60%);
+  --White: hsl(0, 0%, 100%);
+}
+
+.roboto-thin {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: normal;
+}
+
+.roboto-light {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: normal;
+}
+
+.roboto-regular {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+
+.roboto-medium {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+}
+
+.roboto-bold {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.roboto-black {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: normal;
+}
+
+.roboto-thin-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 100;
+  font-style: italic;
+}
+
+.roboto-light-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 300;
+  font-style: italic;
+}
+
+.roboto-regular-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 400;
+  font-style: italic;
+}
+
+.roboto-medium-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: italic;
+}
+
+.roboto-bold-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+  font-style: italic;
+}
+
+.roboto-black-italic {
+  font-family: "Roboto", sans-serif;
+  font-weight: 900;
+  font-style: italic;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Roboto";
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: var(--Charcoal-Grey);
+  height: 100vh;
+}
+
+
+
+.mainContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: white;
+  width: 50%;
+  padding: 0.7rem;
+  border-radius: 30px;
+}
+
+.invisible {
+  display: none !important;
+}
+
+.leftContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  box-sizing: border-box;
+  padding: 1.2rem;
+  gap: 1.2rem;
+  max-width: 500px;
+  margin: 0px 1.5rem;
+}
+
+.rightContainer {
+  width: 49%;
+}
+
+.title {
+  font-size: 2.1rem;
+  font-weight: 600;
+}
+
+.subtitle {
+  font-size: 0.7rem;
+  display: flex;
+  max-width: 281px;
+}
+
+.muchMore {
+  display: flex;
+  align-items: center;
+  gap: 0.73rem;
+}
+
+.list img {
+  display: flex;
+  align-items: center;
+  width: 1rem;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.list span {
+  font-size: 0.7rem;
+}
+
+.measuring {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+.productDiscovery {
+  display: flex;
+  align-items: center;
+  gap: 0.7rem;
+}
+
+#input {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 9px;
+  border-radius: 7px;
+  border: 1px solid gray;
+  width: 17.18rem;
+}
+
+#firstButton {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  padding: 13px;
+  background-color: var(--Dark-Slate-Grey);
+  border-radius: 10px;
+  color: white;
+  border-style: none;
+  font-size: 0.7rem;
+}
+
+.labels{
+  display: flex;
+  justify-content: space-between;
+}
+
+.inputError{
+  background-color: rgba(253, 120, 120, 0.208);
+  color: var(--Tomato);
+  outline: 1px tomato solid;
+}
+
+.errorMessage{
+  font-size: 0.7rem;
+  color: red;
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+.inputLabel {
+  font-size: 0.7rem;
+  color: var(--Dark-Slate-Grey);
+  font-weight: 600;
+  margin-bottom: 5px;
+}
+
+#firstButton:hover {
+  background-image: linear-gradient(to right, var(--Tomato), hsl(21, 100%, 67%));
+  cursor: pointer;
+}
+
+/* after subscribing */
+
+.afterSub{
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  background-color: white;
+  gap: 1rem;
+  border-radius: 20px;
+}
+
+.afterSub img{
+  width: 2.5rem;
+}
+
+.afterTitle{
+  font-size: 2.1rem;
+  font-weight: 600;
+  color: var(--Dark-Slate-Grey);
+  max-width: 265px;
+  line-height: 35px;
+}
+
+.afterSubtitle{
+  font-size: 0.7rem;
+ max-width: 265px;
+}
+
+.afterSubtitle span{
+  color: var(--Dark-Slate-Grey);
+  font-weight: 600;
+}
+
+#afterButton{
+  background-color: var(--Dark-Slate-Grey);
+  border-style: none;
+  color: white;
+  padding: 10px;
+  font-size: 0.7rem;
+  border-radius: 7px;
+}
+
+#afterButton:hover{
+  background-image: linear-gradient(to right, var(--Tomato), hsl(21, 100%, 67%));
+  cursor: pointer;
+}
+
+@media screen and (max-width: 750px) {
+
+  body{
+    display: block;
+    background-color: white;
+    overflow: hidden;
+  }
+
+  .mainContainer{
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding: 0;
+    height: 100svh;
+    justify-content: flex-start;
+    align-items: flex-start;
+  }
+
+  .leftContainer{
+    padding: 0;
+    justify-content: center;
+    height: 100%;
+    padding: 0px 10px;
+    gap: 1.7rem;
+  }
+
+  .rightContainer{
+    order: -1;
+    width: 100%;
+    content: url(assets/images/illustration-sign-up-mobile.svg);
+  }
+
+.title{
+  font-size: 3.2rem;
+}
+
+.subtitle{
+  font-size: 1.1rem;
+  max-width: none;
+}
+
+#input{
+  width: 100%;
+  padding: 15px;
+}
+
+#firstButton{
+  padding: 15px;
+  font-size: 1.1rem;
+}
+
+.list span{
+  font-size: 1.1rem;
+}
+
+  
+
+}

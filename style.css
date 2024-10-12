@@ -270,10 +270,15 @@ body {
 
 @media screen and (max-width: 750px) {
 
+  html {
+    height: 100svh;
+  }
+  
   body {
     display: block;
     background-color: white;
     overflow: hidden;
+    height: 100%;
   }
 
   .mainContainer {

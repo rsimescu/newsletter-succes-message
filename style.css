@@ -277,7 +277,6 @@ body {
   body {
     display: block;
     background-color: white;
-    overflow: hidden;
     height: 100%;
   }
 
